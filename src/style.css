@@ -1,0 +1,18 @@
+h1{
+    position: absolute;
+    width: 393px;
+    height: 87px;
+    left: 919px;
+    top: 136px;
+    
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: right;
+    
+    color: #721182;
+    
+    border: 1px solid #000000;
+}
