@@ -3,12 +3,12 @@ html, body {
     width:900px;
     background-image: url(images/bg.jpg);
     background-size: cover;
-    display: block;
 
  }
 
  * {
     box-sizing: border-box;
+    
   }
 
 .marco{
@@ -16,14 +16,15 @@ html, body {
     padding: 50px;
     margin: auto; /*checar margen arriba y abajo*/
     border: 10px solid #DEB7E8;
+    border-radius: 50px;
     background-color: #efe7f8;
-    column-count: 2;
-    column-gap: normal;
+   /* column-count: 2;
+    column-gap: normal;*/
 
 }
 
-.izquierda{
-    display: block;
+.contenido{
+    display: inline-block;
  
 }
 
@@ -33,11 +34,13 @@ html, body {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    padding-top: 15%;
-    padding-bottom: 5%;
+    padding-top: 5px;;
+    padding-bottom: 10px;
+    padding-left: 25px;
     text-align: center;
     width: 100%;
-    color: #000000;    
+    color: #000000; 
+
 }
 
 .datos{
@@ -47,17 +50,18 @@ html, body {
     font-size: 14px;
     line-height: 18px;
     text-align:center;
-    margin: auto;
-    padding-bottom: 10%;
-    width: 80%;
-    box-sizing: content-box;
     color: #000000;   
     border: 5px solid #DEB7E8;
+    border-radius: 20px;
     background-color:#FFFF;
+    width: 60%;
+    display: inline-block;
+
 }
 
 input[type="text"] {
     background-color: #DEB7E8;
+    border: 1px solid #6A2084;
     width: 100%;
     padding: 1px 20px;
     margin: 8px 0;
@@ -67,10 +71,10 @@ input[type="text"] {
   }
 
 .btn{
-  background-image: radial-gradient(#DEB7E8,  #a43db4);
+  background-color: #DEB7E8;
   border: 1px solid #6A2084;
   border-radius: 8px;
-  color: black;
+  color: #721182;
   font-size: 16px;
   font-family: "Lucida Console", "Courier New", monospace;
   font-style: normal;
@@ -79,37 +83,32 @@ input[type="text"] {
   text-align: center;
 
 }
-
-.derecha{
-    display: block;
-
-}
-
   
  .titulo{
     position: relative;/*checar bien position*/
-    width: 80%;
-    height: 80%;
+    width: 100%;
     font-family: "Lucida Console", "Courier New", monospace;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 28px;
     line-height: 28px;
     text-align: center;
-    padding: 5%;
-    margin: auto;
-    background-image: radial-gradient(circle, #C05EC9, #d7bde2); 
-    color: #721182;
-    /*puedo sacarla hacia box marco en la parte sup. y pomerle un contenedor que se oalargue todo el bloque*/
+    padding: 5px;
+    margin-right: 0%;
+    background-color: #FFFF; 
+    color:#bf7fcf;
+    border-radius: 50px;
+    box-sizing: content-box;
+  
+    /*puedo ponerle un contenedor que se oalargue todo el bloque*/
 }
 
-img {
-    border-radius: 20px; /* sirve para redondear las esquinas*/
-    width: 80%;
-    padding:50px;
-    margin: auto;
-    box-sizing: content-box;/*por qué necesito content box en*/
-    
+img { 
+    border-radius: 50px; /* sirve para redondear las esquinas*/
+    width: 35%;
+    padding:0px;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 

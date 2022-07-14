@@ -8,9 +8,14 @@
 
   <body>
     <div class="marco">
+    
+    <header>
+     <h1 class="titulo">CineMorras</h>
+    </header>
 
-    <div class = "izquierda">
-      <h1 class= "texto" >Por favor,valida tu tarjeta para comprar tu boleto:</h1>
+    <h1 class= "texto" >Por favor, valida tu tarjeta para comprar tu boleto:</h1>
+   
+    <div class= "contenido">
       <fieldset class = "datos">
         <label for="firstName">Nombre(s)<br><input type= text id="name" name="user_firstName"</label><br>
         <label for="lastName1">Apellido Paterno<br><input type= text id="ln1" name="userLastname1"</label><br>
@@ -20,18 +25,11 @@
         <label for="verValue">CVV<br><input type= text id="cvv" name="userVervalue"</label><br>
         <button type="button" class="btn" id= "validation">Enviar</button>
       </fieldset>
-    </div>
 
-    <div class= "derecha">
-      <header>
-        <h2 class="titulo">CineMorras</h2>
-      </header>
-        <img src="images/popcorn.jpg" class= "imagen1"/>
-    </div>
+      <img src="images/popcorn.jpg" />
+
 
     </div>
-
-  
     <script src="index.js" type="module"></script>
   </body>
 </html>
