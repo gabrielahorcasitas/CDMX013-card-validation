@@ -1,126 +1,115 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    background-color: #ffffff;
+    margin:auto; 
+    width:900px;
+    background-image: url(images/bg.jpg);
     background-size: cover;
+    display: block;
 
  }
 
-.marco{
+ * {
     box-sizing: border-box;
-    align-self: center; 
-    padding: 50px;
-    margin: 100px;
-    position: sticky;
-    /*width: 1528px;
-    height: 1054px;
-    left: 56px;
-    top: 85px;*/
-    
-    border: 5px solid #DEB7E8;
+  }
 
+.marco{
+    width: 700px;
+    padding: 50px;
+    margin: auto; /*checar margen arriba y abajo*/
+    border: 10px solid #DEB7E8;
+    background-color: #efe7f8;
     column-count: 2;
-    
     column-gap: normal;
 
 }
 
 .izquierda{
-    float: left;
     display: block;
-
  
 }
 
 .texto{
-    font-family: 'Actor';
+    font-family: "Lucida Console", "Courier New", monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 50px;
-
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    text-align: center;
     width: 100%;
     color: #000000;    
 }
 
 .datos{
-   
-    font-family: 'Actor';
+    font-family: "Lucida Console", "Courier New", monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 38px;
-    display: inline;
-
+    font-size: 14px;
+    line-height: 18px;
+    text-align:center;
+    margin: auto;
+    padding-bottom: 10%;
+    width: 80%;
+    box-sizing: content-box;
     color: #000000;   
     border: 5px solid #DEB7E8;
-
+    background-color:#FFFF;
 }
 
 input[type="text"] {
     background-color: #DEB7E8;
-    width:200px
-    font-family: 'Actor';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 34px;
- 
-  
+    width: 100%;
+    padding: 1px 20px;
+    margin: 8px 0;
+    font-size:14px;
+    font-weight: normal;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
 
 .btn{
   background-image: radial-gradient(#DEB7E8,  #a43db4);
   border: 1px solid #6A2084;
   border-radius: 8px;
-  border: none;
   color: black;
-  font-size: 36px;
-  font-family: 'Actor';
+  font-size: 16px;
+  font-family: "Lucida Console", "Courier New", monospace;
   font-style: normal;
-  padding: 10px;  
+  padding: 15px;  
   margin-top: 20px;
   text-align: center;
-  margin-left: 41%;
+
 }
 
 .derecha{
-    float: right;
     display: block;
+
 }
 
   
  .titulo{
-
     position: relative;/*checar bien position*/
-    width: 393px;
-    height: 87px;
-    
-    font-family: 'Actor';
+    width: 80%;
+    height: 80%;
+    font-family: "Lucida Console", "Courier New", monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 77px;
-    text-align: right;
-    
-   
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 5%;
+    margin: auto;
+    background-image: radial-gradient(circle, #C05EC9, #d7bde2); 
     color: #721182;
-}
-
-.contenedorh2{
-    position: relative;
-    width: 400px;
-    height: 90px;
-
-    background: #DEB7E8;
-
+    /*puedo sacarla hacia box marco en la parte sup. y pomerle un contenedor que se oalargue todo el bloque*/
 }
 
 img {
     border-radius: 20px; /* sirve para redondear las esquinas*/
-    width: 40%;
-    padding:10px;
-    align-self: right;
+    width: 80%;
+    padding:50px;
+    margin: auto;
+    box-sizing: content-box;/*por qué necesito content box en*/
+    
 }
 
 
