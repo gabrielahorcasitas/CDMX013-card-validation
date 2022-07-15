@@ -10,7 +10,6 @@ const validator = (numCard) => {
       }
     numT += x;
     return numT % 10 === 0;
-    console.log(numT);
   }
 }
 
@@ -21,5 +20,4 @@ function sumDigits (numCard) { //función para sumar dígitos; la usaré para su
   .split ('') //separa los items del array
   .map(x => parseInt(x)); //devuelve los elementos una vez aplicando parseInt a c/u en un nuevo array
   convArr [0] + convArr[1];
-  console.log (convArr);
 }
