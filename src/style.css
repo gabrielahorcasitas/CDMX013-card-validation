@@ -2,7 +2,7 @@ html, body {
     margin:auto; 
     width:900px;
     background-image: url(images/bg.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
 
  }
 
@@ -14,12 +14,12 @@ html, body {
 .marco{
     width: 700px;
     padding: 50px;
-    margin: auto; /*checar margen arriba y abajo*/
+    margin-top: 3%;
+    margin-bottom: 2%;
+    margin-left: 10%;
     border: 10px solid #DEB7E8;
     border-radius: 50px;
     background-color: #efe7f8;
-   /* column-count: 2;
-    column-gap: normal;*/
 
 }
 
@@ -48,7 +48,7 @@ html, body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 16px;
     text-align:center;
     color: #000000;   
     border: 5px solid #DEB7E8;
@@ -62,14 +62,39 @@ html, body {
 input[type="text"] {
     background-color: #DEB7E8;
     border: 1px solid #6A2084;
-    width: 100%;
-    padding: 1px 20px;
+    width: 90%;
+    padding: 3px 20px;
     margin: 8px 0;
     font-size:14px;
+    text-align:center;
+    line-height: 16px;
     font-weight: normal;
     font-family: "Lucida Console", "Courier New", monospace;
   }
 
+.expiration{
+    margin-left: 30px;
+}
+
+.expiration input {
+    width: 40%;
+}
+
+.cvvValue{
+    width: 135px;
+    margin-left: 8px;
+}
+
+.cvvValue input {
+    width: 50%;
+    padding: 3px 20px;
+
+}
+
+.expiration, .cvvValue{
+    display: block;
+    float: left;
+}
 .btn{
   background-color: #DEB7E8;
   border: 1px solid #6A2084;
@@ -78,15 +103,15 @@ input[type="text"] {
   font-size: 16px;
   font-family: "Lucida Console", "Courier New", monospace;
   font-style: normal;
-  padding: 15px;  
-  margin-top: 20px;
+  padding: 10px;  
+  margin-top: 10px;
   text-align: center;
 
 }
   
  .titulo{
     position: relative;/*checar bien position*/
-    width: 100%;
+    width:inherit;
     font-family: "Lucida Console", "Courier New", monospace;
     font-style: normal;
     font-weight: 700;
@@ -94,10 +119,10 @@ input[type="text"] {
     line-height: 28px;
     text-align: center;
     padding: 5px;
-    margin-right: 0%;
     background-color: #FFFF; 
     color:#bf7fcf;
     border-radius: 50px;
+    border: 5px solid #d0a1db;
     box-sizing: content-box;
   
     /*puedo ponerle un contenedor que se oalargue todo el bloque*/
