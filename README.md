@@ -21,8 +21,10 @@ La imagen final de la aplicaición web es la siguiente:
 
 * Cómo el producto soluciona los problemas/necesidades de dichos usuarios: El producto al realizar la validación de no. de tarjeta de crédito, permite a las usuarias el concretar la compra en línea de sus boletos por medio de esta forma de pago.
 
-* Foto de tu primer prototipo en papel: ![](</home/gabri/CDMX013-card-validation/src/images/prototipoPapel.jpg>)
+* Foto de tu primer prototipo en papel:
+ ![](<./prototipoPapel.jpg>)
 
 * Resumen del feedback recibido: En mi squad y en la primera DEMO realizada, se me sugirió reducir el mensaje de incio que indica a la usuaria que debe realizar para validar su tarjeta, así como agregar una barra superior para navegar lo que sería la página web del cine.
 
-* Imagen del prototipo final (realicé más cambios directo en HTML que no logré poner en Figma porque aún me sigo familiarizando con el último): ![](</home/gabri/CDMX013-card-validation/src/images/prototipoFeedback.jpg>)
+* Imagen del prototipo final (realicé más cambios directo en HTML que no logré poner en Figma porque aún me sigo familiarizando con el último):
+ ![](<./prototipoFeedback.jpg>)
