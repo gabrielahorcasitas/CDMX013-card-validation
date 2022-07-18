@@ -3,6 +3,6 @@ import validator from './validator.js';// para poder importar funcion con defaul
 console.log(validator);
 
 
-//guardar en variable let maskifyEvent = ;
-//guardar en variable let validationEvent = document.getElementById("validation").addEventListener('click', validator); 
+//guardar en variable let maskifyEvent = document.getElementbyId("numCard").addEventListener("keyup", maskify) ;
+//guardar en variable let isValidEvent = document.getElementById("validation").addEventListener('click', isValid); 
 
