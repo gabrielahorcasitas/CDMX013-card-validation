@@ -1,40 +1,43 @@
-function maskify (numCard){
-console.log(numCard);//por qué marca undefined??? creo que js está tomando el no. de tarjeta como int y no como str
-  let hiddenNum = "";
-    for (let i = 0; i < numCard.lenght; i ++){
-      if (i < numCard.lenght - 4){
-        hiddenNum += "*";
-      } else {
-        hiddenNum += numCard[i];
-      }
-   }
-   return hiddenNum;
-}
+const validator = {
 
-function sumDigits (numCard) { //función para sumar dígitos; la usaré para sumar los dígitos de tarjeta cuando sean > 9
+maskify: function (numCard){
+  console.log(numCard);
+    document.getElementById("numCard").value = numCard.replace(/\s/g, '')//no permitir espacios
+    .replace(/\D/g, '')//no permitir letras
+    .replace(/([0-9]{4})/g, '$1 ')//agrupar en bloques de 4 dígitos
+    .trim();//quitar último espacio en un str
+
+},
+
+sumDigits: function (numCard){ //función para sumar dígitos; la usaré para sumar los dígitos de tarjeta cuando sean > 9
   let convArr = (numCard + '') //convierte los dígitos en array
   .split ('') //separa los items del array
   .map(x => parseInt(x)); //devuelve los elementos una vez aplicando parseInt a c/u en un nuevo array
   convArr [0] + convArr[1]; //suma los ahora dos dígitos
-}
+},
 
-function isValid (numCard){ //numcard---> str con el número de tarjeta 
-console.log(numCard.lenght);
- let  numT = 0;
-  for (let i = 0; i < numCard.lenght; i ++){
-    let x = numCard [i];
-      if (i < numCard.lenght && i % 2 !== 0){
-        x = x*2;
-        if (x > 9){
-          x = sumDigits(x); 
-        }
+isValid: function (numCard){ //numcard---> str con el número de tarjeta 
+let numT = [];
+ for (let i = 0, l = numCard.lenght; i < l; i ++){
+  let x = numCard [i];
+     if (i % 2 !== 0){
+       if(parseInt(numCard[i]) * 2 > 9){
+        numT.push(parseInt(numCard[i] * 2));
+       x = this.sumDigits(x);
+       }else{
+        numT.push(parseInt(numCard[i] * 2));
+       }
+      }else{
+        numT.push(parseInt(numCard[i]));
       }
     numT += x;
     return numT % 10 === 0;
   }
 }
 
-export {maskify, isValid}; //para poder exportar con deafult una función debe declararse en 1a linea de archivo
+}
+
+export default validator; //para poder exportar con deafult una función debe declararse en 1a linea de archivo
 
 
 

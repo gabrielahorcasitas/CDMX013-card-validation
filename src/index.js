@@ -1,19 +1,16 @@
-import * as validator from './validator.js';// para poder importar funcion con default, declarar import en linea 1.
+import validator from './validator.js';// para poder importar funcion con default, declarar import en linea 1.
 
 console.log(validator);
 
-//poner timer para maskify
-
-
 // llamar funciones dentro de objeto validator con event listener (keyup en input para maskify, click en botón para isValid)
-
 function maskifyListener(){
+
     //recibe el numero de tarjeta como lo escribe la usuaria y cambia el string según validator.maskify;
-    let cardNum = document.getElementById("numCard").value;//el valor del elemento html con id "numcard" (no. de tarjeta) se guarda en la variable dardNum;
+    let cardInput = document.getElementById("numCard").value;//el valor del elemento html con id "numcard" (no. de tarjeta) se guarda en la variable cardNum;
 
-    let formatedCardNum = validator.maskify(cardNum);// la variable con el num formateado contiene el no. de tarjeta una vez aplicada la función maskify;
+    let formatedCardInput = validator.maskify(cardInput);// la variable con el num formateado contiene el no. de tarjeta una vez aplicada la función maskify;
 
-    document.getElementById("numCard").innerHTML = formatedCardNum;
+    document.getElementById("numCard").innerHTML = formatedCardInput;//muestra en HTML el num formatedo
 }
 
 document.getElementById("numCard").addEventListener('keyup', maskifyListener);
