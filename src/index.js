@@ -4,16 +4,17 @@ console.log(validator);
 
 // llamar funciones dentro de objeto validator con event listener (keyup en input para maskify, click en botón para isValid)
 function maskifyListener(){
-
+  
     //recibe el numero de tarjeta como lo escribe la usuaria y cambia el string según validator.maskify;
     let cardInput = document.getElementById("numCard").value;//el valor del elemento html con id "numcard" (no. de tarjeta) se guarda en la variable cardNum;
-
+    cardInput = cardInput.replace(/\s/g, '')//no permitir espacios
+    .replace(/[a-zA-Z.,:;-_()]/g, '');//no permitir letras
     let formatedCardInput = validator.maskify(cardInput);// la variable con el num formateado contiene el no. de tarjeta una vez aplicada la función maskify;
-
-    document.getElementById("numCard").innerHTML = formatedCardInput;//muestra en HTML el num formatedo
+   
+    document.getElementById("numCard").value = formatedCardInput;//muestra en HTML el num formatedo
 }
 
-document.getElementById("numCard").addEventListener('keyup', maskifyListener);
+document.getElementById("numCard").addEventListener('keyup', maskifyListener);//activar función con keyup en input
 
 function validationListener(){
     let cardNum = document.getElementById("numCard").value; //el valor del elemento html con id "numcard" (no. de tarjeta) se guarda en la variable dardNum;
@@ -26,4 +27,4 @@ function validationListener(){
     }
 }
 
-document.getElementById("validation").addEventListener('click', validationListener);
+document.getElementById("validation").addEventListener('click', validationListener);//activar funcion con click en btn validar

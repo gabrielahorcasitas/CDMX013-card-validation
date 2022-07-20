@@ -23,39 +23,36 @@
 
     <h3 class= "texto">Por favor, valida tu tarjeta para terminar tu compra:</h3>
    
-    <div class= "contenido">
       <fieldset class = "datos">
         <label for="firstName">Nombre(s)</label><br>
-        <input type= text id="name" name="userData"><br>
+        <input type= "text" id="name" name="userData"><br>
 
         <label for="lastName1">Apellido Paterno</label><br>
-        <input type= text id="ln1" name="userData"><br>
+        <input type= "text" id="ln1" name="userData"><br>
 
         <label for="lastName2"> Apellido Materno</label><br>
-        <input type= text id="ln2" name="userData"><br>
+        <input type= "text" id="ln2" name="userData"><br>
 
         <span class="cardNumber">
           <label for="cardNumber">No. de Tarjeta</label><br>
-          <input type= text id="numCard" name="userData"  maxlength="19" size="19"><br> 
+          <input type= "text" id="numCard" name="userData"  maxlength="16" size="16"><br> 
         </span>
 
         <span class="expiration">
           <label for="expiration">Fecha de Caducidad</label><br>
-          <input type= text id="month" name="month" placeholder="MM" maxlength="2" size="2"/>
+          <input type= "text" id="month" name="month" placeholder="MM" maxlength="2" size="2"/>
           <span>/</span>
-          <input type= text id="year" name="year" placeholder="YY" maxlength="2" size="2"/><br>
+          <input type= "text" id="year" name="year" placeholder="YY" maxlength="2" size="2"/><br>
         </span>
 
         <span class="cvvValue">
           <label for="verValue">CVV</label><br>
-          <input type= text id="cvv" name="userData" maxlength="3" size="3"><br>
+          <input type= "text" id="cvv" name="userData" maxlength="3" size="3"><br>
         </span>
 
         <button type="button" class="btn" id= "validation">Validar</button>
 
       </fieldset>
-
-      <label></label>
 
       <img src="images/popcorn.jpg" />
 
