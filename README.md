@@ -26,5 +26,5 @@ La imagen final de la aplicaición web es la siguiente:
 
 * Resumen del feedback recibido: En mi squad y en la primera DEMO realizada, se me sugirió reducir el mensaje de incio que indica a la usuaria que debe realizar para validar su tarjeta, así como agregar una barra superior para navegar lo que sería la página web del cine.
 
-* Imagen del prototipo final (realicé más cambios directo en HTML que no logré poner en Figma porque aún me sigo familiarizando con el último):
+* Imagen del prototipo final (realicé cambios directo en HTML que no logré poner en Figma, aún me sigo familiarizando con el último):
  ![](<./prototipoFeedback.jpg>)
