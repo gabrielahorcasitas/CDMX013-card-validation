@@ -1,30 +1,24 @@
 import validator from './validator.js';// para poder importar funcion con default, declarar import en linea 1.
-
 console.log(validator);
 
+let cardInput  = "";
 // llamar funciones dentro de objeto validator con event listener (keyup en input para maskify, click en botón para isValid)
-function maskifyListener(){
-  
+function maskifyListener(event){
     //recibe el numero de tarjeta como lo escribe la usuaria y cambia el string según validator.maskify;
-    let cardInput = document.getElementById("numCard").value;//el valor del elemento html con id "numcard" (no. de tarjeta) se guarda en la variable cardNum;
-    cardInput = cardInput.replace(/\s/g, '')//no permitir espacios
+   cardInput = event.target.value;//el valor del elemento html con id "numcard" (que llama a la función como evento en el dom) se guarda en la variable cardInput;
+   cardInput = cardInput.replace(/\s/g, '')//no permitir espacios
     .replace(/[a-zA-Z.,:;-_()]/g, '');//no permitir letras
-    let formatedCardInput = validator.maskify(cardInput);// la variable con el num formateado contiene el no. de tarjeta una vez aplicada la función maskify;
-   
-    document.getElementById("numCard").value = formatedCardInput;//muestra en HTML el num formatedo
-}
 
+    event.target.value = validator.maskify(cardInput);//muestra en HTML el num enmascarado
+}
 document.getElementById("numCard").addEventListener('keyup', maskifyListener);//activar función con keyup en input
 
 function validationListener(){
-    let cardNum = document.getElementById("numCard").value; //el valor del elemento html con id "numcard" (no. de tarjeta) se guarda en la variable dardNum;
-    //console.log(cardNum);
-    //if siempre evalúa si true*
-    if(validator.isValid(cardNum)){ //mando llamar la función isValid de validator con el no. de tarjeta como parámetro
-        alert("Tarjeta Validada"); //si el resultado de isValid sobre el no. de tarjeta es igual a true que dé un alert de válido
+
+    if(validator.isValid(cardInput)){ //mando llamar la función isValid de validator con el no. de tarjeta como parámetro
+        document.getElementById('messageText').innerHTML= "<span style='color: green;'>Tarjeta Validada</span>"; //si el resultado de isValid sobre el no. de tarjeta es igual a true que dé mensaje de válido
     }else {
-        alert("Tarjeta invalida, vuelve a intentarlo");// si no que dé un alert de no válido
+        document.getElementById('messageText').innerHTML = "<span style='color: red;'>Tarjeta Invalida, inténtalo de nuevo</span>";// si no que dé mensaje de no válido
     }
 }
-
 document.getElementById("validation").addEventListener('click', validationListener);//activar funcion con click en btn validar

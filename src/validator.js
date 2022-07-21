@@ -1,14 +1,14 @@
 const validator = {
 
   maskify: function (numCard){
-      numCard =  numCard.replace(/\s/g, '');
-      let maskedNum = "";
-        if (numCard.length > 4){
-          maskedNum = "*".repeat(numCard.length - 4) + numCard.slice(-4);
-          return maskedNum;
-        } else{
-          return numCard;
-        }
+    numCard =  numCard.replace(/\s/g, '');
+     let maskedNum = "";
+      if (numCard.length > 4){
+       maskedNum = "#".repeat(numCard.length - 4) + numCard.slice(-4);
+        return maskedNum;
+      }else{
+       return numCard
+    }
   },
 
   sumDigits: function (numCard){ //función para sumar dígitos; la usaré para sumar los dígitos de tarjeta cuando sean > 9
@@ -19,7 +19,7 @@ const validator = {
   },
 
   isValid: function (numCard){ //numcard---> str con el número de tarjeta 
-  console.log(numCard);
+  console.log(numCard);//POR QUÉ
   let sum = 0;
   let numTransformed = []; //guardando en un array números transformados por operaciones en algoritmo luhn
   for (let i = 0; i < numCard.length; i ++){
@@ -44,9 +44,4 @@ const validator = {
 
 }
 
-//no. de tarjeta para probar: 4137894711755904
-
 export default validator; //para poder exportar con deafult una función debe declararse en 1a linea de archivo
-
-
-

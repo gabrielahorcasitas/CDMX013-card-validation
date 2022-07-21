@@ -107,7 +107,7 @@ html, body {
 }
 
 input[type="text"] {
-    background-color: #DEB7E8;
+    background-color: #f2d7f8;
     border: 1px solid #6A2084;
     width: 90%;
     padding: 3px 20px;
@@ -143,6 +143,11 @@ input[type="text"] {
     display: block;
     float: left;
 }
+
+#messageText{
+    background-color: #f2d7f8;
+}
+    
 .btn{
   background-color: #DEB7E8;
   border: 1px solid #6A2084;
