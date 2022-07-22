@@ -12,7 +12,7 @@ concretar su compra de boletos de cine.
 
 ## 2. Imagen final del Proyecto
 
-La imagen final de la aplicaición web es la siguiente:
+La imagen final de la aplicación web es la siguiente:
 
 
 ## 3. Investigación UX

@@ -2,10 +2,10 @@ const validator = {
 
   maskify: function (numCard){
     numCard =  numCard.replace(/\s/g, '');
-     let maskedNum = "";
+     let numberMasked = "";
       if (numCard.length > 4){
-       maskedNum = "#".repeat(numCard.length - 4) + numCard.slice(-4);
-        return maskedNum;
+       numberMasked = "#".repeat(numCard.length - 4) + numCard.slice(-4);
+        return numberMasked;
       }else{
        return numCard
     }
