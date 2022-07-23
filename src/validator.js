@@ -1,7 +1,6 @@
 const validator = {
 
   maskify: function (numCard){
-    numCard =  numCard.replace(/\s/g, '');
      let numberMasked = "";
       if (numCard.length > 4){
        numberMasked = "#".repeat(numCard.length - 4) + numCard.slice(-4);
@@ -11,35 +10,31 @@ const validator = {
     }
   },
 
-  sumDigits: function (numCard){ //función para sumar dígitos; la usaré para sumar los dígitos de tarjeta cuando sean > 9
-    let convArr = (numCard + '') //convierte los dígitos en array
-    .split ('') //separa los items del array
-    .map(x => parseInt(x)); //devuelve los elementos una vez aplicando parseInt a c/u en un nuevo array
-    convArr [0] + convArr[1]; //suma los ahora dos dígitos
-  },
-
   isValid: function (numCard){ //numcard---> str con el número de tarjeta 
-  console.log(numCard);//POR QUÉ
-  let sum = 0;
+
+  let sum = 0;//guardar suma
   let numTransformed = []; //guardando en un array números transformados por operaciones en algoritmo luhn
-  for (let i = 0; i < numCard.length; i ++){
-    let x = numCard [i];//objeto en el índice
-      if (i % 2 == 0){// aplicar if a números en posición par, porque js empieza en índice 0
-        if(parseInt(x) * 2 > 9){
-          x = parseInt(x) * 2;//
-          x = this.sumDigits(x);//función sumDigits del objeto validator
-          numTransformed.push(x);
+  numCard = numCard.split('').reverse();//convertir input a array para espejearlo
+  numCard = numCard.join('');//volver array a str
+
+    for (let i = 0; i < numCard.length; i ++){
+      let x = numCard[i];//objeto en el índice
+        if (i % 2 !== 0){// aplicar if a números en posición inpar (js empieza en índice 0)
+          if(parseInt(x) * 2 > 9){//convertir a int y si int multiplicado por 2 es mayor a 9
+            x = parseInt(x) * 2 - 9;//restar 9 (equivale a separar y sumas dígitos)
+            numTransformed.push(x);//añadir número con operaciones a numTransformed
+          }else{
+            numTransformed.push(parseInt(numCard[i] * 2));//agregar a numTransformed si al multiplicar no son > 9
+          }
         }else{
-          numTransformed.push(parseInt(numCard[i] * 2));
+          numTransformed.push(parseInt(numCard[i]));//agregar a numTransformed nums en posición par sin operaciones
         }
-      }else{
-        numTransformed.push(parseInt(numCard[i]));
       }
-      for (let i = 0; i < numTransformed.length; i++){
-        sum += numTransformed[i];
-      }
+
+    for (let i = 0; i < numTransformed.length; i++){//para los num en indices de numTransformed
+      sum += numTransformed[i];// agregar numeros a variable sum y sumarlos
     }
-  return sum % 10 === 0;
+  return sum % 10 === 0;//retornar si suma modulo 10 es igual a cero
   }
 
 }

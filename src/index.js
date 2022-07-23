@@ -16,7 +16,7 @@ function maskifyListener(event){
     
     //guardar primeros cuatro dígitos y mostrar tal cual vienen
 	if(endHashtag === 0) {//si no hay #
-		inputUnmasked = event.target.value;
+		inputUnmasked = inputValue;
 
 	}else {//si hay # (endHashtag > 0)
 		//el inputUnmasked se forma desde el principio de la cadena que ya tenemos hasta la posición que corresponde
@@ -33,9 +33,11 @@ document.getElementById("numCard").addEventListener('keyup', maskifyListener);//
 function validationListener(){
 
     if(validator.isValid(inputUnmasked)){ //mando llamar la función isValid de validator con el no. de tarjeta como parámetro
-        document.getElementById('messageText').innerHTML= "<span style='color: green;'>Tarjeta Validada</span>"; //si el resultado de isValid sobre el no. de tarjeta es igual a true que dé mensaje de válido
+        document.getElementById('messageText').innerHTML= "<span style='color: green;'>Tarjeta Validada</span>";
+        //si el resultado de isValid sobre el no. de tarjeta es igual a true que dé mensaje de válido
     }else {
-        document.getElementById('messageText').innerHTML = "<span style='color: red;'>Tarjeta Invalida, inténtalo de nuevo</span>";// si no que dé mensaje de no válido
+        document.getElementById('messageText').innerHTML = "<span style='color: red;'>Tarjeta Invalida, inténtalo de nuevo</span>";
+        // si no que dé mensaje de no válido
     }
 }
 document.getElementById("validation").addEventListener('click', validationListener);//activar funcion con click en btn validar
