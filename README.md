@@ -13,14 +13,17 @@ concretar su compra de boletos de cine.
 ## 2. Imagen final del Proyecto
 
 * La imagen final de la aplicación web es la siguiente:
-![](<./final.jpg>)
+
+ ![](<./final.jpg>)
 
 * Al ejecutarse el objeto validator y obtener un valor true en la función isValid 
   se despliega el mensaje  "Tarjeta validada",
-![](<./valid.jpg>) 
+
+ ![](<./valid.jpg>) 
 
 * mientras que al obtener un valor false en la función isValid se despliega el mensaje
   "Tarjeta invalida, inténtalo de nuevo"
+
  ![](<./invalid.jpg> 
 
 ## 3. Investigación UX
@@ -31,6 +34,9 @@ concretar su compra de boletos de cine.
 
 * Foto de tu primer prototipo en papel:
  ![](<./prototipoPapel.jpg>)
+
+ * Imagen de prototipo inicial Figma:
+ ![](<./prototipo.jpg>)
 
 * Resumen del feedback recibido: En mi squad y en la primera DEMO realizada, se me sugirió reducir el mensaje de incio que indica a la usuaria que debe realizar para validar su tarjeta, así como agregar una barra superior para navegar lo que sería la página web del cine.
 
