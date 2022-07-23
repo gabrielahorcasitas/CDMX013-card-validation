@@ -40,16 +40,20 @@ html, body {
     font-size: 20px;
     line-height: 20px;
     text-align: center;
+   
   
 }
 
 .btn1{
-    width: 100px;
+    width: 125px;
+    height: 55px;
     display: inline-block;
+    margin-top: 5px;
     margin-left: 10px;
     padding: 3px;
     background-color: #FFFF;
     border: 5px solid #DEB7E8;
+    border-radius: 30px;
     color: #a51eb9;
     font-style: normal;
     font-weight: 700;
@@ -149,7 +153,7 @@ input[type="text"] {
 }
     
 .btn{
-  background-color: #DEB7E8;
+  background-color: #f2d7f8;
   border: 1px solid #6A2084;
   border-radius: 8px;
   color: #721182;
