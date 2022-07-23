@@ -12,8 +12,16 @@ concretar su compra de boletos de cine.
 
 ## 2. Imagen final del Proyecto
 
-La imagen final de la aplicación web es la siguiente:
+* La imagen final de la aplicación web es la siguiente:
+![](<./final.jpg>)
 
+* Al ejecutarse el objeto validator y obtener un valor true en la función isValid 
+  se despliega el mensaje  "Tarjeta validada",
+![](<./valid.jpg>) 
+
+* mientras que al obtener un valor false en la función isValid se despliega el mensaje
+  "Tarjeta invalida, inténtalo de nuevo"
+ ![](<./invalid.jpg> 
 
 ## 3. Investigación UX
 

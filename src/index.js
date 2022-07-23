@@ -33,10 +33,10 @@ document.getElementById("numCard").addEventListener('keyup', maskifyListener);//
 function validationListener(){
 
     if(validator.isValid(inputUnmasked)){ //mando llamar la función isValid de validator con el no. de tarjeta como parámetro
-        document.getElementById('messageText').innerHTML= "<span style='color: green;'>Tarjeta Validada</span>";
+        document.getElementById('messageText').innerHTML= "<span style='color: green;'>Tarjeta validada</span>";
         //si el resultado de isValid sobre el no. de tarjeta es igual a true que dé mensaje de válido
     }else {
-        document.getElementById('messageText').innerHTML = "<span style='color: red;'>Tarjeta Invalida, inténtalo de nuevo</span>";
+        document.getElementById('messageText').innerHTML = "<span style='color: red;'>Tarjeta invalida, inténtalo de nuevo</span>";
         // si no que dé mensaje de no válido
     }
 }
