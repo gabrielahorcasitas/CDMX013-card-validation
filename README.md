@@ -24,8 +24,8 @@ concretar su compra de boletos de cine.
 * mientras que al obtener un valor false en la función isValid se despliega el mensaje
   "Tarjeta invalida, inténtalo de nuevo"
 
- ![](<./invalid.jpg> 
-
+ ![](<./invalid.jpg>) 
+ 
 ## 3. Investigación UX
 
 * Quiénes son los usuarios y los objetivos en relación con el producto: Las usuarias son clientes de un cine que distribuye filmes hechos por mujeres,"CineMorras", que están realizando la compra en línea de boletos para una función. 
