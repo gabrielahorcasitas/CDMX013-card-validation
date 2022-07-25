@@ -1,5 +1,4 @@
 import validator from './validator.js';// para poder importar funcion con default, declarar import en linea 1.
-console.log(validator);
 
 let inputUnmasked = "";
 

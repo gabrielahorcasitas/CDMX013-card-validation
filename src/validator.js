@@ -1,5 +1,6 @@
-const validator = {
+const validator = {//objeto validator que contiene funciones
 
+  //nombre : es una función, finalizar con coma si siguen más funciones dentro del objeto
   maskify: function (numCard){//numcard---> str con el número de tarjet
      let numberMasked = "";//numMasked es un  str
       if (numCard.length > 4){//aplicar maskify en cuanto str de input sea mayor a 4 dígitos
