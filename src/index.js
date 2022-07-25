@@ -40,4 +40,4 @@ function validationListener(){
         // si no que dé mensaje de no válido
     }
 }
-document.getElementById("validation").addEventListener('click', validationListener);//activar funcion con click en btn validar
+document.getElementById("validation").addEventListener('click', validationListener);//activar función con click en btn validar

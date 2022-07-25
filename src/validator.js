@@ -1,12 +1,13 @@
 const validator = {
 
-  maskify: function (numCard){
-     let numberMasked = "";
-      if (numCard.length > 4){
+  maskify: function (numCard){//numcard---> str con el número de tarjet
+     let numberMasked = "";//numMasked es un  str
+      if (numCard.length > 4){//aplicar maskify en cuanto str de input sea mayor a 4 dígitos
+       //desplegar #'s según extensión de dígitos en input + últimos 4 dígitos en input sin enmascarar
        numberMasked = "#".repeat(numCard.length - 4) + numCard.slice(-4);
-        return numberMasked;
+        return numberMasked;//mostrar input masked
       }else{
-       return numCard
+       return numCard// si son menos de 4 dígitos mostrar input sin enmascarar 
     }
   },
 
@@ -17,7 +18,7 @@ const validator = {
   numCard = numCard.split('').reverse();//convertir input a array para espejearlo
   numCard = numCard.join('');//volver array a str
 
-    for (let i = 0; i < numCard.length; i ++){
+    for (let i = 0; i < numCard.length; i ++){//iterar función en en dígito por posición
       let x = numCard[i];//objeto en el índice
         if (i % 2 !== 0){// aplicar if a números en posición inpar (js empieza en índice 0)
           if(parseInt(x) * 2 > 9){//convertir a int y si int multiplicado por 2 es mayor a 9

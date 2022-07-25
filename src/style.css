@@ -1,4 +1,4 @@
-html, body {
+html, body { /*caracteríticas generales del bod del html*/
     margin: 0;
     width:100%;
     background-image: url(images/bg.jpg);
@@ -6,24 +6,24 @@ html, body {
 
  }
 
- * {
-    box-sizing: border-box;
+ * {/*para todos los elementos*/
+    box-sizing: border-box;/*elementos contenidos dentro de box madre, incluyendo padding/margin*/
     
   }
 
-.menu{
+.menu{/*características de clase menu*/
 
     width: 100%;
-    display: inline-block;
+    display: inline-block; /*separación entre elementos en el block*/
     background-color:#efe7f8;
     margin: 0;
     padding: 3px;
-    display: flex;
+    display: flex;/*tipo de blocj¿k flex para poder delimitar separación*/
     justify-content: space-between;
 
 }
 
-.logoMenu{
+.logoMenu{/*características del logo en barra superior*/
 
     width: 1200px;
     display: inline-block;
@@ -44,7 +44,7 @@ html, body {
   
 }
 
-.btn1{
+.btn1{/*características del botón de menu*/
     width: 125px;
     height: 55px;
     display: inline-block;
@@ -63,7 +63,7 @@ html, body {
 
 }
 
-.marco{
+.marco{/*características del bloque que contiene a mensaje, formulario e imagen*/
     width: 700px;
     padding: 35px;
     margin: auto;
@@ -74,12 +74,24 @@ html, body {
 
 }
 
-.contenido{
-    display: inline-block;
- 
+.titulo{/*título del mensaje de introducir datos*/
+    width:inherit;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    padding: 5px;
+    background-color: #FFFF; 
+    color: #a51eb9;
+    border-radius: 50px;
+    border: 5px solid #d0a1db;
+    box-sizing: content-box;
+
 }
 
-.texto{
+.texto{ /*características mensaje para introducir datos*/
     font-family: "Lucida Console", "Courier New", monospace;
     font-style: normal;
     font-weight: 400;
@@ -94,7 +106,7 @@ html, body {
 
 }
 
-.datos{
+.datos{/*características de testo en fieldset*/
     font-family: "Lucida Console", "Courier New", monospace;
     font-style: normal;
     font-weight: 400;
@@ -110,7 +122,7 @@ html, body {
 
 }
 
-input[type="text"] {
+input[type="text"] {/*características del input ti´po texto*/
     background-color: #f2d7f8;
     border: 1px solid #6A2084;
     width: 90%;
@@ -124,35 +136,35 @@ input[type="text"] {
   }
 
 
-.expiration{
+.expiration{/*características del box de fecha de expiración*/
     margin-left: 30px;
 }
 
-.expiration input {
+.expiration input {/*características del input de fecha de expiración*/
     width: 40%;
 }
 
-.cvvValue{
+.cvvValue{/*características del box de cvv*/
     width: 135px;
     margin-left: 8px;
 }
 
-.cvvValue input {
+.cvvValue input{/*características del input de cvv*/
     width: 50%;
     padding: 3px 20px;
 
 }
 
-.expiration, .cvvValue{
+.expiration, .cvvValue{/*considerar box de expiración y cvv dentro de bloque para alinearlos*/
     display: block;
     float: left;
 }
 
-#messageText{
+#messageText{/*características de mensaje a desplegar dependiendo de si se valida tarjeta o no*/
     background-color: #f2d7f8;
 }
     
-.btn{
+.btn{/*características del botón de validar*/
   background-color: #f2d7f8;
   border: 1px solid #6A2084;
   border-radius: 8px;
@@ -166,25 +178,7 @@ input[type="text"] {
 
 }
   
- .titulo{
-    width:inherit;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    padding: 5px;
-    background-color: #FFFF; 
-    color: #a51eb9;
-    border-radius: 50px;
-    border: 5px solid #d0a1db;
-    box-sizing: content-box;
-  
-    /*puedo ponerle un contenedor que se oalargue todo el bloque*/
-}
-
-img { 
+img { /*caracter{isticas de la imagen*/
     border-radius: 50px; /* sirve para redondear las esquinas*/
     width: 33%;
     padding:5px;
@@ -192,5 +186,3 @@ img {
     margin-left: 33px;
     
 }
-
-
