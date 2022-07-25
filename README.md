@@ -23,7 +23,7 @@ concretar su compra de boletos de cine.
 
 * mientras que al obtener un valor false en la función isValid se despliega el mensaje
   "Tarjeta invalida, inténtalo de nuevo"
-
+  
  ![](<./invalid.jpg>) 
  
 ## 3. Investigación UX
