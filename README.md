@@ -39,7 +39,7 @@ relacionados al cine en la misma paleta de colores.
 ### Cómo el producto soluciona los problemas/necesidades de dichos usuarios: 
 * El producto al realizar la validación de no. de tarjeta de crédito, permite a las usuarias el concretar la compra en línea de sus boletos por medio de esta forma de pago.
 
-### Foto de tu primer prototipo en papel:
+### Foto de mí primer prototipo en papel:
  ![](<./prototipoPapel.jpg>)
 
 ### Imagen de prototipo inicial Figma:
