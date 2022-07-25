@@ -26,7 +26,7 @@ relacionados al cine en la misma paleta de colores.
  ![](<./valid.jpg>) 
 
 * Mientras que al obtener un valor false en la función isValid se despliega el mensaje
-  "Tarjeta invalida, inténtalo de nuevo"
+  "Tarjeta invalida, inténtalo de nuevo".
 
  ![](<./invalid.jpg>) 
  
