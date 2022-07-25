@@ -21,11 +21,11 @@ relacionados al cine en la misma paleta de colores.
  ![](<./final.jpg>)
 
 * Al ejecutarse el objeto validator y obtener un valor true en la función isValid 
-  se despliega el mensaje  "Tarjeta validada",
+  se despliega el mensaje  "Tarjeta validada".
 
  ![](<./valid.jpg>) 
 
-* mientras que al obtener un valor false en la función isValid se despliega el mensaje
+* Mientras que al obtener un valor false en la función isValid se despliega el mensaje
   "Tarjeta invalida, inténtalo de nuevo"
 
  ![](<./invalid.jpg>) 
