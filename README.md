@@ -19,7 +19,7 @@ concretar su compra de boletos de cine.
 * Al ejecutarse el objeto validator y obtener un valor true en la función isValid 
   se despliega el mensaje  "Tarjeta validada",
 
- ![](<./validd.jpg>) 
+ ![](<./valid.jpg>) 
 
 * mientras que al obtener un valor false en la función isValid se despliega el mensaje
   "Tarjeta invalida, inténtalo de nuevo"
