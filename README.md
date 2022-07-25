@@ -8,7 +8,11 @@
 
 Para alcanzar los objetivos de aprendizaje del proyecyo Card Validation, realicé
 una aplicación web en la que se pide a la usuaria validar su no. de tarjeta para
-concretar su compra de boletos de cine. 
+concretar su compra de boletos de cine.
+
+Con el tipo de usuaria y empresa en mente, use una paleta de coleres suave y 
+pastel en rosas y morados. Así mismo, use un fondo, una imagen y emoticones con motivos
+relacionados al cine en la misma paleta de colores.
 
 ## 2. Imagen final del Proyecto
 
@@ -23,7 +27,7 @@ concretar su compra de boletos de cine.
 
 * mientras que al obtener un valor false en la función isValid se despliega el mensaje
   "Tarjeta invalida, inténtalo de nuevo"
-  
+
  ![](<./invalid.jpg>) 
  
 ## 3. Investigación UX
