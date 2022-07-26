@@ -29,6 +29,12 @@ relacionados al cine en la misma paleta de colores.
   "Tarjeta invalida, inténtalo de nuevo".
 
  ![](<./invalid.jpg>) 
+
+### Imagen final del proyecto en GitHub Pages
+
+* Para el despliegue de la aplicación web con Git Hub Pages, cree una rama nueva en la que moví el archivo index.html a la carpeta /root, modificando dentro de dicho archivo las rutas de llamada/vinculación con los archivos js, css, y la carpeta de imágenes que dan estilo, dinamismo e interactividad a la interfaz de usuaria.
+
+ ![](<./gh_pages.jpg>)
  
 ## 3. Investigación UX
 
