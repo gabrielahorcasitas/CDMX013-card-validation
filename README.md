@@ -65,4 +65,5 @@ related to cinema, in the same color palette, as a background.
 
 * Image of the final prototype after feedback (I made changes directly to the HTML that 
   I didn't manage to put in Figma, I'm still getting to know the last one)
+  
  ![](<./prototipoFeedback.jpg>)
