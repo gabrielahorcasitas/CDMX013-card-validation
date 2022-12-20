@@ -1,59 +1,67 @@
-# Tarjeta de crédito válida - Proyecto 1 
-# Por Gabriela Horcasitas
-## Compra de boletos de Cine
+# Credit Card Validation - Project 1 
+# By Gabriela Horcasitas
+## Buy movie tickets!
 
 ***
 
-## 1. Resumen del Proyecto
+## 1. Project Summary
 
-Para alcanzar los objetivos de aprendizaje del proyecyo Card Validation, realicé
-una aplicación web en la que se pide a la usuaria validar su no. de tarjeta para
-concretar su compra de boletos de cine.
+To achieve the learning objectives of this project, I carried out
+a web application in which a user is asked to validate their card number to
+complete the purchase of their movie tickets.
 
-Con el tipo de usuaria y empresa en mente, use una paleta de coleres suave y 
-pastel en rosas y morados. Así mismo, use un fondo, una imagen y emoticones con motivos
-relacionados al cine en la misma paleta de colores.
+With the type of user and hypothetical company in mind, I used a palette of soft and pastelcolors in pinks and purples. 
+Likewise, I used an image with motives
+related to cinema, in the same color palette, as a background.
 
-## 2. Imagen final del Proyecto
+## 2.Final Look of the Project
 
-### La imagen final de la aplicación web es la siguiente:
+### The final image of the project in the dom is the following:
 
  ![](<./final.jpg>)
 
-* Al ejecutarse el objeto validator y obtener un valor true en la función isValid 
-  se despliega el mensaje  "Tarjeta validada".
+* When obtaining a value equal to true in the "isValid" function,
+  the message "Tarjeta validada" is displayed.
+
 
  ![](<./valid.jpg>) 
 
-* Mientras que al obtener un valor false en la función isValid se despliega el mensaje
-  "Tarjeta invalida, inténtalo de nuevo".
+* While getting a value equal to false, the message displayed is
+  "Tarjeta inválida, inténtalo de nuevo".
 
  ![](<./invalid.jpg>) 
 
-### Imagen final del proyecto en GitHub Pages
+### Final Look of the project deployed in GitHub Pages
 
-* Para el despliegue de la aplicación web con Git Hub Pages, cree una rama nueva en la que moví el archivo index.html a la carpeta /root, modificando dentro de dicho archivo las rutas de llamada/vinculación con los archivos js, css, y la carpeta de imágenes que dan estilo, dinamismo e interactividad a la interfaz de usuaria.
+* For the deployment of the web application with Git Hub Pages, I created a new branch in which 
+  I moved the index.html file to the /root folder, modifying within said file the calling/linking 
+  paths with the JS and CSS files, and also the folder of images, all of which give style, dynamism
+  and interactivity to the user interface..
 
  ![](<./gh_pages.jpg>)
  
-## 3. Investigación UX
+## 3. UX Research
 
-### Quiénes son los usuarios y los objetivos en relación con el producto: 
+### Who are the users and objectives in relation to the product? 
 
-* Las usuarias son clientes de un cine que distribuye filmes hechos por mujeres,"CineMorras", que están realizando la compra en línea de boletos para una función. 
+* The users are customers of a cinema that distributes films made by women, 
+  "CineMorras", who're purchasing tickets for a performance online. 
 
-### Cómo el producto soluciona los problemas/necesidades de dichos usuarios: 
-* El producto al realizar la validación de no. de tarjeta de crédito, permite a las usuarias el concretar la compra en línea de sus boletos por medio de esta forma de pago.
+### How does the product solve the problems/needs of said users?
+*By validating the credit card number, the product allows users to purchase their tickets online through this form of payment.
 
-### Foto de mí primer prototipo en papel:
+### Photo of my first paper prototype
  ![](<./prototipoPapel.jpg>)
 
-### Imagen de prototipo inicial Figma:
+### Figma early prototype image
  ![](<./prototipo.jpg>)
 
-### Resumen del feedback recibido: 
+### Summary of feedback received
 
-* En mi squad y en la primera DEMO realizada, se me sugirió reducir el mensaje de incio que indica a la usuaria que debe realizar para validar su tarjeta, así como agregar una barra superior para navegar lo que sería la página web del cine.
+* In my first DEMO, I was suggested to reduce the start message that tells the user 
+  what to do to validate their card, as well as add a navigation bar that would be 
+  the web page of the cinema.
 
-* Imagen del prototipo final (realicé cambios directo en HTML que no logré poner en Figma, aún me sigo familiarizando con el último):
+
+* Image of the final prototype (I made changes directly to the HTML that I didn't manage to put in Figma, I'm still getting to know the last one)
  ![](<./prototipoFeedback.jpg>)
