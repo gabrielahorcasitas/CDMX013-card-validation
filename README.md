@@ -16,7 +16,7 @@ related to cinema, in the same color palette, as a background.
 
 ## 2.Final Look of the Project
 
-### The final image of the project in the dom is the following:
+### The final image of the project in the dom is the following
 
  ![](<./final.jpg>)
 
@@ -63,5 +63,6 @@ related to cinema, in the same color palette, as a background.
   the web page of the cinema.
 
 
-* Image of the final prototype (I made changes directly to the HTML that I didn't manage to put in Figma, I'm still getting to know the last one)
+* Image of the final prototype after feedback (I made changes directly to the HTML that 
+  I didn't manage to put in Figma, I'm still getting to know the last one)
  ![](<./prototipoFeedback.jpg>)
